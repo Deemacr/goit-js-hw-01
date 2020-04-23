@@ -16,7 +16,7 @@ if (totalPrice <= credits) {
   console.log(
     (message = `Вы приобрели ${droidRequest} дроидов, на счету у вас оставлось ${
       credits - totalPrice
-    }`)
+      }`)
   );
 } else {
   console.log((message = "Недостаточно средств на счету!"));
