@@ -1,10 +1,23 @@
 let userInput;
 let total = 0;
 
-do {
+
+
+while (true) {
   userInput = prompt("Введи число");
-  total += Number(userInput);
-  console.log(userInput);
-} while (userInput !== null);
+
+  if (userInput === null) {
+    break;
+  }
+
+  userInput = Number(userInput);
+  const isNumber = Number.isNaN(userInput)
+
+  if (isNumber) {
+    alert('It is not a number, try again')
+    continue
+  }
+  total += userInput
+}
 
 alert(`Total sum is ${total}`);
