@@ -18,6 +18,6 @@ if (totalPrice <= credits) {
       credits - totalPrice
       }`)
   );
-} else {
+} else if (totalPrice > credits) {
   console.log((message = "Недостаточно средств на счету!"));
 }
