@@ -9,7 +9,7 @@ const droidRequest = prompt("Какое количество дроидов же
 if (droidRequest === null) {
   console.log((message = "Отменено пользователем"));
 } else {
-  totalPrice = droidRequest * pricePerDroid;
+  totalPrice = Number(droidRequest) * pricePerDroid;
 }
 
 if (totalPrice <= credits) {
